@@ -1,0 +1,52 @@
+/* CSS para estilizar as perguntas e respostas do FAQ */
+
+/* Estilo para a pergunta */
+.faq-question {
+    background-color: #343a40; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+/* Remove o sublinhado do link dentro da pergunta */
+.faq-question a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor definida na pergunta */
+}
+
+.faq-question a:hover {
+    text-decoration: none; /* Garante que o sublinhado não apareça no hover */
+}
+
+.faq-question:hover {
+    background-color: #495057; /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilo para a resposta */
+.faq-answer {
+    background-color: #f8f9fa; /* Cor de fundo da resposta */
+    color: #212529; /* Cor do texto */
+    padding: 15px 20px;
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+/* Animação de entrada suave para a resposta */
+.collapse.show .faq-answer {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Keyframes para a animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

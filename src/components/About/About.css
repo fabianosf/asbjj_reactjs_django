@@ -1,0 +1,84 @@
+/* Imagem*/
+.sobre-img-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 80vh; /* Ocupa a altura total da tela */
+    border-radius: 50%;     
+}
+
+
+.sobre-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%; /* Garante a borda arredondada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a transformação e sombra */
+}
+
+.sobre-img:hover {
+    transform: scale(1.05) translateY(-5px); /* Aumenta um pouco e desloca para cima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil para o efeito de profundidade */
+  }
+
+/* Imagem */
+
+/*Textao*/
+
+div .texto {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+ div .paragrafo {
+    padding: 5px;
+    margin: 5px;
+ }
+
+ /* Textao */
+
+
+/* Testemunials */ 
+
+.blockquote p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.blockquote-footer {    
+    padding: 15px;
+}
+
+/* Testemunials */ 
+
+
+/* Ajustes específicos para dispositivos móveis */
+@media (max-width: 767px) {
+    .sobre-img {
+        width: 100%;
+        /* Ajusta a largura da imagem para 100% do contêiner em dispositivos móveis */
+        height: auto;
+        /* Mantém a proporção da imagem */
+    }
+}
+
+
+/* Tabela */
+
+/* Classe personalizada para o cabeçalho azul */
+.custom-blue {
+    background-color: #007bff !important; 
+    color: #fff; /* Cor do texto branca */
+    border-radius: 5px !important; 
+    text-align: center;
+}
+
+#weekdays-multiple-schedule-table .table {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para a tabela */
+  }
+  
+  /* Efeito ao passar o mouse: tabela parece sair da tela */
+  #weekdays-multiple-schedule-table .table:hover {
+    transform: scale(1.02) translateY(-5px); /* Aumenta um pouco e desloca a tabela para cima */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para criar profundidade */
+  }

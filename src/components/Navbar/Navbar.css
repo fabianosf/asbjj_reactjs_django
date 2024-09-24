@@ -1,0 +1,83 @@
+/* Navbar.css */
+.navbar {
+    background-color: #444; /* Cor de fundo da navbar */
+    height: 110px;
+  }
+  
+  .navbar .nav-link,
+  .navbar .navbar-brand,
+  .navbar .btn {
+    color: #ffffff !important; /* Texto branco */
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .navbar-brand:hover {
+    color: #ccc !important; /* Texto acinzentado claro ao passar o mouse */
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Garante que o modal fique sobre o conteúdo */
+  }
+  
+  .modal-content {
+    background: #222; /* Cor de fundo do modal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: #fff; /* Cor do texto dentro do modal */
+  }
+  
+  .close-btn {
+    background: transparent;
+    border: none;
+    color: #fff; /* Cor do botão de fechar */
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff; /* Cor dos links */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ccc; /* Cor ao passar o mouse nos links */
+  }
+  
+  .d-flex {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  
+  .btn-info {
+    color: #fff; /* Cor do texto do botão Login */
+    background-color: #17a2b8; /* Cor de fundo do botão Login */
+    border: none;
+  }
+  
+  .btn-success {
+    color: #fff; /* Cor do texto do botão Signup */
+    background-color: #28a745; /* Cor de fundo do botão Signup */
+    border: none;
+  }
+  
+  .btn-info:hover, .btn-success:hover {
+    opacity: 0.8; /* Efeito ao passar o mouse */
+  }
+  

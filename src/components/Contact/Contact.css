@@ -1,0 +1,53 @@
+/* TeamSection.css */
+#staff {
+    background-color: #343a40;
+    padding: 50px 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  #staff img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Animação suave */
+  }
+  
+  /* Efeito de "saindo da tela" */
+  #staff img:hover {
+    transform: scale(1.1) translateY(-10px); /* Aumenta o tamanho e move para cima */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+  }
+  
+  #staff h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  hr {
+    border-top: 2px solid #fff;
+  }
+
+  .container h2 {
+    text-align: center;
+  }
+
+/* FOOTER */
+#main-footer {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+  width: 100vw; /* Ocupa toda a largura da tela */
+  margin-left: calc(-50vw + 50%); /* Centraliza e remove as margens */
+  text-align: center; /* Centraliza o texto */
+}
+
+#main-footer p {
+  margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+.fa-heart {
+  color: red;
+}
+  

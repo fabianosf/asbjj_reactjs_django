@@ -1,0 +1,97 @@
+/* Home CSS */
+
+/* Aula conosco */
+#home-heading {
+    position: relative;
+    min-height: 220px;
+    background: url('/image/tatame.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); 
+}
+
+/* Video */
+.video-background {
+    background: url('/image/tatame2.png') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .video-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    z-index: -1;
+  }
+  
+/* Video */
+
+/* Galeria de Fotos */
+
+.card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-bottom: 2px solid #ddd;
+}
+
+.card a {
+  display: block;
+}
+/* Galeria de Fotos */
+
+
+/* conheca nossa academia */
+/* Estilos para a seção #info */
+#info {
+  padding: 20px 0; /* Espaçamento interno da seção */
+}
+
+#info h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#info p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+#info a {
+  margin-top: 10px;
+}
+
+/* Efeito de destaque na imagem da academia */
+#info img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave para transformações */
+}
+
+/* Efeito ao passar o mouse: imagem parece sair da tela */
+#info img:hover {
+  transform: scale(1.05) translateY(-5px); /* Aumenta o tamanho e move a imagem para cima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para dar profundidade */
+}

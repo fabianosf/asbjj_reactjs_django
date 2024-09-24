@@ -1,0 +1,97 @@
+/* Estilo geral do body para ocupar a altura total da tela */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz a página ocupar a altura total da viewport */
+    margin: 0;
+}
+
+/* Main container que envolve o conteúdo principal da página */
+#root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Container principal que envolve o conteúdo */
+.main-content {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    padding: 80px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 105px auto;
+}
+
+/* Form Hover Effect */
+.form-container:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Heading */
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+/* Submit Button */
+.btn-primary {
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+/* Button Hover Effect */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);    
+}
+
+/* Centraliza o botão dentro do form */
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão no meio */
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+}
+
+/* Ajusta o estilo do botão para melhorar a aparência */
+.btn-primary {
+    padding: 10px 30px; /* Ajusta o padding para um botão maior e mais confortável */
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Footer Styles */
+
+ 
